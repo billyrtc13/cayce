@@ -6,24 +6,34 @@
 
 <header>
 	<h1><img src="./logo.jpeg" alt="CAYCE"></h1>
-	<Nav/>
 </header>
 
-<slot></slot>
+<article class="content">
+	<Nav/>
+	<slot></slot>
 
-<footer>
-	<div>
-		<!-- <img src="" alt="imagenFooter"> -->
-	</div>
-	<span>Desarrollado por</span>
-	<a href="https://billy.com.uy" target="_blanc">billyrtc13@gmail.com</a>
-	<span>v {version}</span>
-</footer>
+	<footer>
+		<div>
+			<!-- <img src="" alt="imagenFooter"> -->
+		</div>
+		<span>Desarrollado por</span>
+		<a href="https://billy.com.uy" target="_blanc">billyrtc13@gmail.com</a>
+		<span>v {version}</span>
+	</footer>
+</article>
 
 <style>
+	header {
+		position: fixed;
+		z-index: 1;
+		width: 100%;
+		top: 0;
+		left: 0;
+	}
+
 	h1 {
 		text-align: center;
-		margin: 0 auto;
+		margin: 1em auto;
 		text-transform: uppercase;
 		font-weight: 300;
 		display: flex;
@@ -34,13 +44,20 @@
 	}
 
 	img {
-		height: 100px;
+		height: 80px;
+		max-width: 80%;
+		object-fit: contain;
+		object-position: center;
 	}
 
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
+	.content {
+		position: absolute;
+		z-index: 3;
+		left: 0;
+		top: 100px;
+		width: 100%;
+		grid-row: 2;
+		background-color: #fff;
 	}
 
 	footer {
@@ -64,5 +81,19 @@
 		color: #fff;
 		margin: .3em auto;
 		text-align: center;
+	}
+
+	@media (min-width: 480px) {
+		h1 {
+			margin: .5em 0;
+		}
+
+		img {
+			height: 100px;
+		}
+
+		.content {
+			top: 130px;
+		}
 	}
 </style>

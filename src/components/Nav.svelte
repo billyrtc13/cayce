@@ -60,7 +60,7 @@
 		content: '';
 		width: calc(100% - 1em);
 		height: 2px;
-		background-color: #0099ff;
+		background-color: red;
 		display: block;
 		bottom: -1px;
 	}

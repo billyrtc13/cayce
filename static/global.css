@@ -35,7 +35,7 @@ textarea::-webkit-scrollbar-track {
 .cont::-webkit-scrollbar-thumb,
 body::-webkit-scrollbar-thumb,
 textarea::-webkit-scrollbar-thumb {
-  background-color: rgb(0, 153, 255);
+  background-color: #ce0000;
   outline: none;
 }
 

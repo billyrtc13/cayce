@@ -1,8 +1,7 @@
 {
-  "name": "inmobiliaria",
-  "description": "Inmobiliaria test",
-  "version": "0.0.1",
-  "map": "AIzaSyAEeIx04qidVFifNLpHLQbdWCYzMxW0BQ4",
+  "name": "cayse",
+  "description": "Cooperativa de ahorro y crédito",
+  "version": "0.0.2",
   "scripts": {
     "dev": "sapper dev",
     "build": "sapper build --legacy",

@@ -35,7 +35,7 @@
 
 <section class="pue">	
 	<p>
-		Puedes enviarnos la información por WatsApp y lo cabrás en el día en Red Pagos
+		Puedes enviarnos la información por WatsApp y lo cobrás en el día en Red Pagos
 	</p>
 	<hr>
 	<a href="https://api.whatsapp.com/send?phone=59894263332" target="_blank" rel="noopener noreferrer">
